@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: url('../img/bg.jpg');
+    background: url('../img/bg.jpg') no-repeat;
 }
 
 header::before {
@@ -79,7 +79,6 @@ header {
     display: grid;
     grid-template-areas:
         'div div div img';
-    margin-bottom: 69px;
 }
 
 .maincenter {
@@ -97,33 +96,87 @@ header {
 
 #mainimg {
     grid-area: img;
-    padding: 36px;
+    padding: 34px;
     width: 100%;
     position: relative;
     right: 170px;
-    top: 60px;
+    top: 105px;
 }
 
-.maincenter button {
+.maincenter a button {
     padding: 15px;
     margin: 30px;
     background-color: #82c50e;
     margin-left: 11px;
     border: 2px;
     border-radius: 5px;
-}
-
-.maincenter button a {
     text-decoration: none;
     color: black;
-    font-size: 1.1rem
-    ;
+    font-size: 1.1rem;
 }
 
-/* Footer */
+.maincenter a button:hover {
+    cursor: pointer;
+}
 
-.foot {
-    background-color: #1f8c35;
+/* Notes */
+
+.notes {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-gap: 5px;
+    justify-content: start;
+}
+
+.container .notescontainer .col-6 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-gap: 60px;
+    margin: 10px;
+}
+
+.container .notescontainer .col-6 .p-3 {
+    background-color: #f7e94296;
+    height: 250px;
+    width: 230px;
+    text-decoration: underline;
+}
+
+.container .notescontainer .col-6 .p-3 h3 {
+    padding: 3px;
+}
+
+.container .notescontainer .col-6 .p-3 div {
+    padding: 3px;
+}
+
+/* Contact Us */
+
+.contact_center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main_contact {
+    position: relative;
+    top: 22%;
+}
+
+.contact_center .main_contact img {
+    width: 60%;
+    margin-left: 90px;
+}
+
+.contact_center .main_contact h2 {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.contact_center .contactform form {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-gap: 5px;
+    margin: 20px;
 }
 
 /* Utility Classes */

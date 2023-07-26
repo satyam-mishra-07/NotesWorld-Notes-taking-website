@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <header id="head">
         <nav id="navigation">
             <ul>
@@ -20,15 +21,33 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="notes.html">My Notes</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li>
-                    <form class="form-inline">
-                        <input class="search" id="search" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn" type="submit">Search</button>
-                    </form>
-                </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
+
+    <div class="contact_center">
+        <div class="main_contact">
+            <img src="img/error.png" alt="">
+            <h2 class="h-secondary">Report your Issue or Suggestions and Help us.</h2>
+        </div>
+        <div class="contactform">
+            <form action="#">
+                <h2 class="h-secondary">Contact Us</h2>
+                <label for="forName">Name: </label>
+                <input type="text" value="Name" id="forName" class="formitems">
+                <label for="forEmail">E-Mail: </label>
+                <input type="email" value="Email" id="forEmail" class="formitems">
+                <label for="forPhone">Mobile Number: </label>
+                <input type="number" value="Number" id="forPhone" class="formitems">
+                <label for="forIssue">Issue</label>
+                <textarea name="issue" id="forIssue" cols="30" rows="10" placeholder="What is your Problem" class="formitems"></textarea>
+                <button class="sendbtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
