@@ -12,13 +12,17 @@ header::before {
     content: "";
     background-color: rgb(0, 0, 0);
     position: absolute;
-    height: 100%;
+    height: 94px;
     width: 100%;
     z-index: -1;
     opacity: 0.1;
 }
 
 /* Navigation Menu */
+
+header {
+    position: sticky;
+}
 
 #navigation ul img {
     width: 60px;
@@ -28,12 +32,12 @@ header::before {
     left: 0px;
 }
 
-#navigation ul .posleft{
+#navigation ul .posleft {
     position: absolute;
     left: 71px;
 }
 
-#navigation ul span{
+#navigation ul span {
     padding: 5px;
     font-size: 2rem;
     color: #1f8c35;
@@ -59,12 +63,86 @@ header::before {
     color: white;
 }
 
-#navigation ul li .form-inline .btn{
+#navigation ul li .form-inline .btn {
     padding: 10px;
     border: 2px;
     border-radius: 5px;
 }
 
-#navigation ul li .form-inline #search{
+#navigation ul li .form-inline #search {
     padding: 10px;
+}
+
+/* Center Body */
+
+.center {
+    display: grid;
+    grid-template-areas:
+        'div div div img';
+    margin-bottom: 69px;
+}
+
+.maincenter {
+    grid-area: div;
+}
+
+.maincenter {
+    position: relative;
+    margin: 40px;
+    padding: 50px;
+    width: 50%;
+    top: 70px;
+    left: 20px;
+}
+
+#mainimg {
+    grid-area: img;
+    padding: 36px;
+    width: 100%;
+    position: relative;
+    right: 170px;
+    top: 60px;
+}
+
+.maincenter button {
+    padding: 15px;
+    margin: 30px;
+    background-color: #82c50e;
+    margin-left: 11px;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.maincenter button a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem
+    ;
+}
+
+/* Footer */
+
+.foot {
+    background-color: #1f8c35;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 2.29rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.para {
+    font-size: 1.1rem;
+    padding: 12px;
+}
+
+.text-center {
+    text-align: center;
 }
