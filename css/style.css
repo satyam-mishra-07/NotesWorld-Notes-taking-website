@@ -126,6 +126,7 @@ header {
     grid-template-rows: 2fr;
     grid-gap: 5px;
     justify-content: start;
+    margin: 30px;
 }
 
 .container .notescontainer .col-6 {
