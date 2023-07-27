@@ -1,0 +1,15 @@
+.float_left {
+    margin: 41px 166px;
+    padding: 42px 86px;
+}
+
+.float_right {
+    margin: 98px 108px;
+    padding: 42px 76px;
+}
+
+.float_right span {
+    padding: 5px 4px;
+    margin: 5px 5px;
+    font-size: 2.8rem;
+}

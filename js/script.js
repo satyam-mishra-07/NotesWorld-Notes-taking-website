@@ -14,7 +14,6 @@ function update() {
         str += `
             <div class="p-3">
                 <h3>${element[0]}</h3>
-                <hr>
                 <div>${element[1]}</div>
                 <button class="delbtn" onclick="deleted(${index})">Delete</button>
             </div>`;

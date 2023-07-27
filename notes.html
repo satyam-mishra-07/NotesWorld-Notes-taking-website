@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Notes | NotesWorlds.com </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/tab.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -28,17 +29,44 @@
         </nav>
     </header>
 
-    <!-- Main Body -->
-    <form action="#" class="notes">
-        <h2 class="h-secondary">Add Note</h2>
-        <input type="text" placeholder="Heading" class="notehead" id="noteheading">
-        <textarea id="note" class="note" name="Write Something" cols="30" rows="10"
-            placeholder="Write Something"></textarea>
-        <button id="submitnote" class="notebtn" type="submit">Save</button>
-        <button id="clearnote" class="notebtn" type="submit" onclick="clearstorage()">Clear All</button>
-    </form>
+    <!-- Add Notes -->
+    <div class="formcontainer">
+        <div class="float_left">
+            <form action="#" class="notes">
+
+                <h2 class="h-secondary" id="AddNote">Add Note</h2>
+                <input type="text" placeholder="Heading" class="notehead" id="noteheading">
+
+                <textarea id="note" class="note" name="Write Something" cols="30" rows="10"
+                    placeholder="Write Something"></textarea>
+
+                <div class="row">
+                    <button id="submitnote" class="notebtn" type="submit">Save</button>
+                    <button id="clearnote" class="notebtn" type="submit" onclick="clearstorage()">Clear All</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="float_right">
+            <span>
+                ORGANIZE YOUR THOUGHTS
+            </span>
+
+            <span>
+                BE MORE PRODUCTIVE
+            </span>
+
+            <span>
+                EXCELL IN LIFE
+            </span>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Display Notes -->
 
     <div class="container text-center">
+        <h2 class="h-secondary">My Notes</h2>
         <div class="notescontainer">
             <div class="col-6" id="notesbody">
             </div>
