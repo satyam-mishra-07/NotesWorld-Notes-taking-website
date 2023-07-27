@@ -4,43 +4,51 @@
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Borel', cursive;
     background: url('../img/bg.jpg') no-repeat;
 }
 
-header::before {
+/* Navigation Menu */
+
+#navigation{
+    width: 100%;
+}
+
+#navigation::before {
     content: "";
     background-color: rgb(0, 0, 0);
     position: absolute;
+    top: 0px;
     height: 94px;
     width: 100%;
     z-index: -1;
     opacity: 0.1;
 }
 
-/* Navigation Menu */
-
-header {
-    position: sticky;
-}
-
-#navigation ul img {
+#navigation #logo img {
     width: 60px;
     height: 60px;
     margin: 10px;
     position: absolute;
+    top: 7px;
     left: 0px;
 }
 
-#navigation ul .posleft {
+#navigation #logo .posleft {
     position: absolute;
+    top: 19px;
     left: 71px;
-}
-
-#navigation ul span {
     padding: 5px;
     font-size: 2rem;
     color: #1f8c35;
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #navigation ul li {
@@ -51,26 +59,9 @@ header {
     font-size: 1.5rem;
 }
 
-#navigation ul {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 #navigation ul li a {
     text-decoration: none;
     color: white;
-}
-
-#navigation ul li .form-inline .btn {
-    padding: 10px;
-    border: 2px;
-    border-radius: 5px;
-}
-
-#navigation ul li .form-inline #search {
-    padding: 10px;
 }
 
 /* Index.html */
@@ -83,24 +74,21 @@ header {
 
 .maincenter {
     grid-area: div;
-}
-
-.maincenter {
     position: relative;
     margin: 40px;
     padding: 50px;
-    width: 50%;
-    top: 70px;
+    width: 75%;
     left: 20px;
+
 }
 
 #mainimg {
     grid-area: img;
     padding: 34px;
-    width: 100%;
+    width: 50%;
     position: relative;
-    right: 170px;
-    top: 105px;
+    right: 135px;
+    top: 149px;
 }
 
 /* Notes.html*/
@@ -126,6 +114,7 @@ header {
 
 #AddNote {
     padding: 10px 49px;
+    font-family: 'Borel', cursive;
 }
 
 #noteheading {
@@ -138,6 +127,7 @@ header {
     margin: 14px 43px;
     font-size: 1.2rem;
     text-align: justify;
+    font-family: 'Borel', cursive;
 }
 
 #note {
@@ -150,6 +140,7 @@ header {
     margin: 14px 43px;
     font-size: 1.2rem;
     text-align: justify;
+    font-family: 'Borel', cursive;
 }
 
 .row{
@@ -171,6 +162,7 @@ header {
 .float_right span{
     padding: 5px 4px;
     margin: 5px 5px;
+    font-family: 'Borel', cursive;
 }
 
 /* Display Notes Section */
@@ -179,7 +171,9 @@ header {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     grid-gap: 60px;
-    margin: 10px;
+    margin: 10px 2px;
+    justify-items: center;
+    align-items: center;
 }
 
 .container .notescontainer .col-6 .p-3 {
@@ -243,14 +237,16 @@ header {
     margin: 20px;
 }
 
-.contact_center .contactform form .formlabel{
+.contact_center .contactform form .formlabels {
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: 'Borel', cursive;
 }
 
 .contact_center .contactform form h2{
     padding: 12px 0px;
     text-decoration: underline;
+    font-family: 'Borel', cursive;
 }
 
 .contact_center .contactform form .formitems {
@@ -261,6 +257,7 @@ header {
     margin: 14px 0px;
     font-size: 1.1rem;
     text-align: justify;
+    font-family: 'Borel', cursive;
 }
 
 /* Buttons */
@@ -272,9 +269,11 @@ header {
     margin-left: 11px;
     border: 2px;
     border-radius: 5px;
+    box-shadow: 4px 4px 10px;
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
+    font-family: 'Borel', cursive;
 }
 
 .maincenter a button:hover {
@@ -290,6 +289,7 @@ header {
     margin: 3px 50px;
     padding: 6px 10px;
     font-size: 1.1rem;
+    font-family: 'Borel', cursive;
 }
 
 #submitnote:hover {
@@ -297,7 +297,7 @@ header {
 }
 
 #clearnote {
-    width: 88px;
+    width: 104px;
     height: 33px;
     border: 2px;
     box-shadow: 4px 4px 10px;
@@ -305,6 +305,7 @@ header {
     margin: 3px 50px;
     padding: 6px 10px;
     font-size: 1.1rem;
+    font-family: 'Borel', cursive;
 }
 
 #clearnote:hover {
@@ -320,6 +321,7 @@ header {
     margin: 3px 50px;
     padding: 5px 7px;
     font-size: 1rem;
+    font-family: 'Borel', cursive;
 }
 
 .delbtn:hover {
@@ -335,6 +337,7 @@ header {
     margin: 7px 0px;
     padding: 6px 7px;
     font-size: 1.1rem;
+    font-family: 'Borel', cursive;
 }
 
 .sendbtn:hover{
@@ -346,16 +349,19 @@ header {
 .h-primary {
     font-size: 2.29rem;
     padding: 12px;
+    font-family: 'Borel', cursive;
 }
 
 .h-secondary {
     font-size: 1.8rem;
     padding: 12px;
+    font-family: 'Borel', cursive;
 }
 
 .para {
     font-size: 1.1rem;
     padding: 12px;
+    font-family: 'Borel', cursive;
 }
 
 .text-center {
